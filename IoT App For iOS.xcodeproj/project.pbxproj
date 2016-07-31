@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183FC5411C50669600540970 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FC5401C50669600540970 /* main.m */; };
+		183FC5441C50669600540970 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FC5431C50669600540970 /* AppDelegate.m */; };
+		183FC5471C50669600540970 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FC5461C50669600540970 /* LoginViewController.m */; };
+		183FC54A1C50669600540970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183FC5481C50669600540970 /* Main.storyboard */; };
+		183FC54D1C50669600540970 /* IoT_App_For_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 183FC54B1C50669600540970 /* IoT_App_For_iOS.xcdatamodeld */; };
+		183FC54F1C50669600540970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183FC54E1C50669600540970 /* Assets.xcassets */; };
+		183FC5521C50669600540970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183FC5501C50669600540970 /* LaunchScreen.storyboard */; };
+		183FC55B1C506EEC00540970 /* UserHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FC55A1C506EEC00540970 /* UserHomeViewController.m */; };
+		183FC55E1C50788B00540970 /* ControlPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183FC55D1C50788B00540970 /* ControlPanelViewController.m */; };
+		183FC5611C507AA700540970 /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 183FC55F1C507AA700540970 /* lamp_off.png */; };
+		183FC5621C507AA700540970 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 183FC5601C507AA700540970 /* lamp_on.png */; };
+		183FC5641C507C3600540970 /* temperature_gauge.png in Resources */ = {isa = PBXBuildFile; fileRef = 183FC5631C507C3600540970 /* temperature_gauge.png */; };
+		183FC5661C507CDA00540970 /* dimmer_bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = 183FC5651C507CDA00540970 /* dimmer_bulb.png */; };
+		186D1F791C552CEE00408ED5 /* RegistratoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D1F781C552CEE00408ED5 /* RegistratoinViewController.m */; };
+		1875B3191C50ED1500CE3353 /* MqttConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875B3181C50ED1500CE3353 /* MqttConnectionManager.m */; };
+		1875B3221C50F23800CE3353 /* MqttCallbackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1875B3211C50F23700CE3353 /* MqttCallbackHandler.m */; };
+		18B36B2F1C51889F008030E6 /* door_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B36B2A1C51889F008030E6 /* door_close.png */; };
+		18B36B301C51889F008030E6 /* door_open.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B36B2B1C51889F008030E6 /* door_open.png */; };
+		18B36B311C51889F008030E6 /* garrage_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B36B2C1C51889F008030E6 /* garrage_close.png */; };
+		18B36B321C51889F008030E6 /* garrage_open.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B36B2D1C51889F008030E6 /* garrage_open.png */; };
+		18B36B331C51889F008030E6 /* valve.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B36B2E1C51889F008030E6 /* valve.png */; };
+		18F03D841C589051009F4E1D /* libiosMQTT.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F03D831C589051009F4E1D /* libiosMQTT.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1836F6771C513948004BA820 /* MqttOCClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MqttOCClient.h; sourceTree = "<group>"; };
+		183FC53C1C50669600540970 /* IoT App For iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IoT App For iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		183FC5401C50669600540970 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		183FC5421C50669600540970 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		183FC5431C50669600540970 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		183FC5451C50669600540970 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		183FC5461C50669600540970 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		183FC5491C50669600540970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		183FC54C1C50669600540970 /* IoT_App_For_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IoT_App_For_iOS.xcdatamodel; sourceTree = "<group>"; };
+		183FC54E1C50669600540970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		183FC5511C50669600540970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		183FC5531C50669600540970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183FC5591C506EEC00540970 /* UserHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHomeViewController.h; sourceTree = "<group>"; };
+		183FC55A1C506EEC00540970 /* UserHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHomeViewController.m; sourceTree = "<group>"; };
+		183FC55C1C50788B00540970 /* ControlPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlPanelViewController.h; sourceTree = "<group>"; };
+		183FC55D1C50788B00540970 /* ControlPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlPanelViewController.m; sourceTree = "<group>"; };
+		183FC55F1C507AA700540970 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamp_off.png; path = ../../IoTApp/app/src/main/res/drawable/lamp_off.png; sourceTree = "<group>"; };
+		183FC5601C507AA700540970 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lamp_on.png; path = ../../IoTApp/app/src/main/res/drawable/lamp_on.png; sourceTree = "<group>"; };
+		183FC5631C507C3600540970 /* temperature_gauge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = temperature_gauge.png; path = ../../IoTApp/app/src/main/res/drawable/temperature_gauge.png; sourceTree = "<group>"; };
+		183FC5651C507CDA00540970 /* dimmer_bulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dimmer_bulb.png; path = ../../IoTApp/app/src/main/res/drawable/dimmer_bulb.png; sourceTree = "<group>"; };
+		186D1F771C552CEE00408ED5 /* RegistratoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistratoinViewController.h; sourceTree = "<group>"; };
+		186D1F781C552CEE00408ED5 /* RegistratoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistratoinViewController.m; sourceTree = "<group>"; };
+		1875B3171C50ED1500CE3353 /* MqttConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MqttConnectionManager.h; sourceTree = "<group>"; };
+		1875B3181C50ED1500CE3353 /* MqttConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MqttConnectionManager.m; sourceTree = "<group>"; };
+		1875B3201C50F23700CE3353 /* MqttCallbackHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MqttCallbackHandler.h; sourceTree = "<group>"; };
+		1875B3211C50F23700CE3353 /* MqttCallbackHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MqttCallbackHandler.m; sourceTree = "<group>"; };
+		18B36B2A1C51889F008030E6 /* door_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door_close.png; sourceTree = "<group>"; };
+		18B36B2B1C51889F008030E6 /* door_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door_open.png; sourceTree = "<group>"; };
+		18B36B2C1C51889F008030E6 /* garrage_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garrage_close.png; sourceTree = "<group>"; };
+		18B36B2D1C51889F008030E6 /* garrage_open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = garrage_open.png; sourceTree = "<group>"; };
+		18B36B2E1C51889F008030E6 /* valve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = valve.png; sourceTree = "<group>"; };
+		18F03D831C589051009F4E1D /* libiosMQTT.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiosMQTT.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183FC5391C50669600540970 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F03D841C589051009F4E1D /* libiosMQTT.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183FC5331C50669500540970 = {
+			isa = PBXGroup;
+			children = (
+				183FC53E1C50669600540970 /* IoT App For iOS */,
+				183FC53D1C50669600540970 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		183FC53D1C50669600540970 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183FC53C1C50669600540970 /* IoT App For iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183FC53E1C50669600540970 /* IoT App For iOS */ = {
+			isa = PBXGroup;
+			children = (
+				18F03D831C589051009F4E1D /* libiosMQTT.a */,
+				186D1F761C54DC6500408ED5 /* images */,
+				1836F6771C513948004BA820 /* MqttOCClient.h */,
+				1875B3171C50ED1500CE3353 /* MqttConnectionManager.h */,
+				1875B3181C50ED1500CE3353 /* MqttConnectionManager.m */,
+				1875B3201C50F23700CE3353 /* MqttCallbackHandler.h */,
+				1875B3211C50F23700CE3353 /* MqttCallbackHandler.m */,
+				1875B31F1C50F21200CE3353 /* util */,
+				1875B31B1C50EDE800CE3353 /* include */,
+				1875B31A1C50EDE300CE3353 /* lib */,
+				183FC5421C50669600540970 /* AppDelegate.h */,
+				183FC5431C50669600540970 /* AppDelegate.m */,
+				183FC5451C50669600540970 /* LoginViewController.h */,
+				183FC5461C50669600540970 /* LoginViewController.m */,
+				183FC5481C50669600540970 /* Main.storyboard */,
+				183FC54E1C50669600540970 /* Assets.xcassets */,
+				183FC5501C50669600540970 /* LaunchScreen.storyboard */,
+				183FC5531C50669600540970 /* Info.plist */,
+				183FC54B1C50669600540970 /* IoT_App_For_iOS.xcdatamodeld */,
+				183FC53F1C50669600540970 /* Supporting Files */,
+				183FC5591C506EEC00540970 /* UserHomeViewController.h */,
+				183FC55A1C506EEC00540970 /* UserHomeViewController.m */,
+				183FC55C1C50788B00540970 /* ControlPanelViewController.h */,
+				183FC55D1C50788B00540970 /* ControlPanelViewController.m */,
+				186D1F771C552CEE00408ED5 /* RegistratoinViewController.h */,
+				186D1F781C552CEE00408ED5 /* RegistratoinViewController.m */,
+			);
+			path = "IoT App For iOS";
+			sourceTree = "<group>";
+		};
+		183FC53F1C50669600540970 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				183FC5401C50669600540970 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		186D1F761C54DC6500408ED5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				183FC5651C507CDA00540970 /* dimmer_bulb.png */,
+				183FC5631C507C3600540970 /* temperature_gauge.png */,
+				183FC55F1C507AA700540970 /* lamp_off.png */,
+				183FC5601C507AA700540970 /* lamp_on.png */,
+				18B36B2A1C51889F008030E6 /* door_close.png */,
+				18B36B2B1C51889F008030E6 /* door_open.png */,
+				18B36B2C1C51889F008030E6 /* garrage_close.png */,
+				18B36B2D1C51889F008030E6 /* garrage_open.png */,
+				18B36B2E1C51889F008030E6 /* valve.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		1875B31A1C50EDE300CE3353 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		1875B31B1C50EDE800CE3353 /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		1875B31F1C50F21200CE3353 /* util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183FC53B1C50669600540970 /* IoT App For iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183FC5561C50669600540970 /* Build configuration list for PBXNativeTarget "IoT App For iOS" */;
+			buildPhases = (
+				183FC5381C50669600540970 /* Sources */,
+				183FC5391C50669600540970 /* Frameworks */,
+				183FC53A1C50669600540970 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IoT App For iOS";
+			productName = "IoT App For iOS";
+			productReference = 183FC53C1C50669600540970 /* IoT App For iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183FC5341C50669600540970 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CDAC;
+				TargetAttributes = {
+					183FC53B1C50669600540970 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = QE2A778GC8;
+					};
+				};
+			};
+			buildConfigurationList = 183FC5371C50669600540970 /* Build configuration list for PBXProject "IoT App For iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 183FC5331C50669500540970;
+			productRefGroup = 183FC53D1C50669600540970 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183FC53B1C50669600540970 /* IoT App For iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		183FC53A1C50669600540970 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183FC5521C50669600540970 /* LaunchScreen.storyboard in Resources */,
+				183FC54F1C50669600540970 /* Assets.xcassets in Resources */,
+				18B36B311C51889F008030E6 /* garrage_close.png in Resources */,
+				18B36B321C51889F008030E6 /* garrage_open.png in Resources */,
+				18B36B301C51889F008030E6 /* door_open.png in Resources */,
+				18B36B2F1C51889F008030E6 /* door_close.png in Resources */,
+				183FC5641C507C3600540970 /* temperature_gauge.png in Resources */,
+				183FC5661C507CDA00540970 /* dimmer_bulb.png in Resources */,
+				183FC5621C507AA700540970 /* lamp_on.png in Resources */,
+				183FC54A1C50669600540970 /* Main.storyboard in Resources */,
+				18B36B331C51889F008030E6 /* valve.png in Resources */,
+				183FC5611C507AA700540970 /* lamp_off.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183FC5381C50669600540970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183FC54D1C50669600540970 /* IoT_App_For_iOS.xcdatamodeld in Sources */,
+				1875B3221C50F23800CE3353 /* MqttCallbackHandler.m in Sources */,
+				1875B3191C50ED1500CE3353 /* MqttConnectionManager.m in Sources */,
+				183FC55E1C50788B00540970 /* ControlPanelViewController.m in Sources */,
+				183FC55B1C506EEC00540970 /* UserHomeViewController.m in Sources */,
+				183FC5471C50669600540970 /* LoginViewController.m in Sources */,
+				183FC5441C50669600540970 /* AppDelegate.m in Sources */,
+				183FC5411C50669600540970 /* main.m in Sources */,
+				186D1F791C552CEE00408ED5 /* RegistratoinViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		183FC5481C50669600540970 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183FC5491C50669600540970 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		183FC5501C50669600540970 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				183FC5511C50669600540970 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		183FC5541C50669600540970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		183FC5551C50669600540970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		183FC5571C50669600540970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "IoT App For iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iot.mk.com.iotapp.IoT-App-For-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		183FC5581C50669600540970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "IoT App For iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+					"$(PROJECT_DIR)/IoT",
+					App,
+					For,
+					iOS,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iot.mk.com.iotapp.IoT-App-For-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183FC5371C50669600540970 /* Build configuration list for PBXProject "IoT App For iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183FC5541C50669600540970 /* Debug */,
+				183FC5551C50669600540970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183FC5561C50669600540970 /* Build configuration list for PBXNativeTarget "IoT App For iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183FC5571C50669600540970 /* Debug */,
+				183FC5581C50669600540970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		183FC54B1C50669600540970 /* IoT_App_For_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				183FC54C1C50669600540970 /* IoT_App_For_iOS.xcdatamodel */,
+			);
+			currentVersion = 183FC54C1C50669600540970 /* IoT_App_For_iOS.xcdatamodel */;
+			path = IoT_App_For_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 183FC5341C50669600540970 /* Project object */;
+}
